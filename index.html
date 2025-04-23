@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Site Title & Meta Description -->
+  <title>Rohan Subramani</title>
+  <meta name="description" content="Rohan Subramani's personal website." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/profile.jpg">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="backgroundCanvas"></canvas>
+
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="cv.html">CV</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Rohan Subramani</h1>
+        <div class="bio">
+          <p>
+            Hi, I'm Rohan! I aim to promote welfare and reduce suffering as much as possible for all sentient beings, which has led me to work on AGI safety research. I am particularly interested in foundation model agents (FMAs): systems like AutoGPT and Operator that equip foundation models with memory, tool use, and other affordances so they can perform multi-step tasks autonomously.
+          </p>
+          <p>
+            I am the founder of <a href="https://forum.effectivealtruism.org/posts/BEuJdpTPcyKYaD9X7/apply-to-aether-independent-llm-agent-safety-research-group">Aether</a>, an independent research lab focused on foundation model agent safety. I'm also an incoming PhD student at the University of Toronto, where I will be supervised by <a href="https://zhijing-jin.com/fantasy/">Zhijing Jin</a> and continue to run Aether. Previously, I completed an undergrad in CS and Math at Columbia, where I helped run Columbia Effective Altruism and Columbia AI Alignment Club (CAIAC). I have done research internships with AI Safety Hub Labs (now <a href="https://www.lasrlabs.org/">LASR Labs</a>), UC Berkeley's <a href="https://humancompatible.ai/">Center for Human-Compatible AI (CHAI)</a>, and the <a href="https://www.matsprogram.org/">ML Alignment & Theory Scholars (MATS)</a> program.
+          </p>
+          <p>
+            I love playing tennis, listening to rock and indie pop music, playing social deduction games, reading fantasy books, watching a fairly varied set of TV shows and movies, and playing the saxophone, among other things.
+          </p>
+          <div class="social-links">
+            <a href="mailto:rohn.subrmni@gmail.com">Email</a>
+            <a href="https://www.lesswrong.com/users/rohans">LessWrong</a>
+            <a href="https://www.linkedin.com/in/rohan-subramani-70a919225/">LinkedIn</a>
+            <a href="https://github.com/RohanSubramani">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=O-qEYjUAAAAJ&hl=en">Google Scholar</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="profile photo" class="profile-img">
+      </div>
+    </section>
+
+    <!-- Papers -->
+    <section id="papers">
+      <h2>Papers</h2>
+
+      <div class="paper-card">
+        <h3><a href="https://arxiv.org/abs/2503.06323" class="paper-link">Higher-Order Beliefs in Incomplete Information MAIDs</a></h3>
+        <p>
+          <em><strong>R. Subramani</strong>*, J. Foxabbott*, F.R. Ward</em><br>
+          <em>AAMAS, 2025</em><br>
+          A framework for reasoning about higher-order beliefs in multi-agent influence diagrams with incomplete information.
+        </p>
+      </div>
+
+      <div class="paper-card">
+        <h3><a href="https://arxiv.org/abs/2411.17749" class="paper-link">The Partially Observable Off-Switch Game</a></h3>
+        <p>
+          <em>A. Garber*, <strong>R. Subramani</strong>*, L. Luu*, M. Bedaywi, S. Russell, S. Emmons</em><br>
+          <em>AAAI, 2025</em><br>
+          Extending the AI off-switch game to partially observable settings, analyzing optimal policies for both human and AI.
+        </p>
+      </div>
+
+      <div class="paper-card">
+        <h3><a href="https://arxiv.org/abs/2311.07723" class="paper-link">Generalization Analogies: A Testbed for Generalizing AI Oversight to Hard-To-Measure Domains</a></h3>
+        <p>
+          <em>J. Clymer, G. Baker, <strong>R. Subramani</strong>, S. Wang</em><br>
+          <em>Preprint.</em><br>
+          Developing formal frameworks to test AI systems' ability to generalize oversight to novel domains.
+        </p>
+      </div>
+
+      <div class="paper-card">
+        <h3><a href="https://arxiv.org/abs/2310.11840" class="paper-link">On The Expressivity of Objective-Specification Formalisms in Reinforcement Learning</a></h3>
+        <p>
+          <em><strong>R. Subramani</strong>*, M. Williams*, M. Heitmann*, H. Holm, C. Griffin, J. Skalse</em><br>
+          <em>ICLR, 2024</em><br>
+          Analyzing the theoretical limitations of different frameworks for specifying objectives in RL.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3><a href="https://github.com/RohanSubramani/Miscellaneous/blob/main/AIS%20Upskilling/Rohan_Transformer_from_Scratch.ipynb" class="paper-link">Coding GPT-2 from scratch</a></h3>
+        <p>Implemented a transformer-based language model from scratch to better understand the architecture.</p>
+      </div>
+      
+      <div class="project-card">
+        <h3><a href="https://github.com/RohanSubramani/Miscellaneous/tree/main/AIS%20Upskilling/llm_agents" class="paper-link">Implementing basic (and not-so-basic) LLM agents</a></h3>
+        <p>Built various autonomous agents powered by language models to explore their capabilities and limitations.</p>
+      </div>
+      
+      <div class="project-card">
+        <h3><a href="https://github.com/RohanSubramani/Miscellaneous/tree/main/AIS%20Upskilling/ARENA" class="paper-link">Alignment Research Engineer Accelerator (ARENA) exercises</a></h3>
+        <p>Completed technical exercises focused on AI alignment concepts and implementation.</p>
+      </div>
+      
+      <div class="project-card">
+        <h3><a href="https://colab.research.google.com/drive/13WDSp7B5oRZuT3mg_vQac-4NxrjpLLe1?usp=sharing" class="paper-link">Experimenting with neural network pruning</a></h3>
+        <p>Investigated different approaches to reducing neural network size while maintaining performance.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- <p>&copy; <span id="year"></span> All Rights Reserved.</p> -->
+    </footer>
+  </div>
+</body>
+</html>
